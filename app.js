@@ -2,34 +2,27 @@ var http=require('http');
 
 var fs=require('fs');
 
+var express=require('express');
+ 
+var app=express();
 
-var route= new Object();
-var homeController=function(req,res){
+app.get('/',function(req,res){
     fs.readFile('index.html',function(err,data){
         res.write(data);
         
         res.end('mesaj bitti');
     });
-}
+});
 
-
-var loginController=function(req,res){
+app.get('/login',function(req,res){
     fs.readFile('login.html',function(err,data){
         res.write(data);
         
         res.end('mesaj bitti');
     });
-}
- route['/']=homeController;
- route['/login']=loginController;
-
-var server =http.createServer(function(req,res){
-
-    if(req.url in route)
-        route[req.url](req,res);
-   
-
-  
-    
 });
-server.listen(8000);
+
+app.listen(8000);
+
+
+
