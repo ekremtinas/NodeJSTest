@@ -10,7 +10,7 @@ var app=express();
 
 
 
-var routeElektronik=require('./ElektronikRoute');
+var routeElektronik=require('./app_server/routes/ElektronikRoute');
 
 app.use('/public',express.static(path.join(__dirname,'public')));
 

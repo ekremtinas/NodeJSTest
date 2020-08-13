@@ -2,7 +2,7 @@ var express= require('express');
 
 var router= express.Router();
 
-var controller=require('./ElektronikController');
+var controller=require('../controller/ElektronikController');
 
 router.get('/',controller.home);
 router.get('/bilgisayar',controller.bilgisayar);
