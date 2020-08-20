@@ -2,6 +2,7 @@
     "name": "NodeTest",
     "version": "1.0.0",
     "dependencies": {
+        "debug": "^4.1.1",
         "express": "^4.17.1"
     },
     "scripts": {
