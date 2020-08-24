@@ -7,6 +7,9 @@ var path = require('path');
 var app=express();//Express'in nesnesi türetildi.
 
 
+app.set('view engine','ejs');//express2e view enginei olarak ejs tanıtıldı.
+app.set('views',path.join(__dirname,'./app_server/views'));//views olarak nerede oladuğu tanıtıldı.
+
 
 
 
@@ -18,7 +21,7 @@ app.use('/public',express.static(path.join(__dirname,'public')));//Public klasö
 app.use(function(req,res,next){//Kendi Middleware yazılışı.
 console.log('url...:'+req.originalUrl)
 console.log('time:'+Date.now())
-next();//Middleware arası zinciri bağlar.
+next();//Middlewareler arası zinciri bağlar.
 });
 
 
