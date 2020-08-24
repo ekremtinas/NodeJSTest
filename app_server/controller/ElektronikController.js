@@ -1,4 +1,4 @@
-var path = require('path');//Path modülü import edildi.
+/*var path = require('path');//Path modülü import edildi.
 module.exports.home=function(req,res){//home sayfası ElektronikController olarak export edildi. 
   console.log(req.deneme)  
   res.render('elektronik');//Hangi view'in çağrılacağı belirtildi./*View'e veri gönderme Json ile olur*/
@@ -9,3 +9,4 @@ module.exports.home=function(req,res){//home sayfası ElektronikController olara
     res.render('bilgisayar',{mesaj:"Test",kisiler:users});//Hangi view'in çağrılacağı belirtildi./*View'e veri gönderme Json ile olur*/
    
   }
+*/

@@ -1,4 +1,4 @@
-var express= require('express');//Express import edildi.
+/*var express= require('express');//Express import edildi.
 
 var router= express.Router();//Express'in router fonk. kullanılmak üzere türetildi.
 
@@ -14,3 +14,5 @@ router.get('/',controller.home);//Router fonk ile get kullanılarak gelen reques
 router.get('/bilgisayar',controller.bilgisayar);//Router fonk ile get kullanılarak gelen request'e göre controller'daki export edilen bilgisayar sayfası response edildi.
 
 module.exports=router;//Bu route'ı app.js'de kullanabilmek için export ettik.
+
+*/
