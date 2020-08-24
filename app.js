@@ -6,6 +6,7 @@ var express=require('express');//Express Modülü import edildi.
 var path = require('path');
 var app=express();//Express'in nesnesi türetildi.
 
+var ejsLayouts=require('express-ejs-layouts');//Layout import edildi.
 
 app.set('view engine','ejs');//express2e view enginei olarak ejs tanıtıldı.
 app.set('views',path.join(__dirname,'./app_server/views'));//views olarak nerede oladuğu tanıtıldı.
@@ -15,6 +16,7 @@ app.set('views',path.join(__dirname,'./app_server/views'));//views olarak nerede
 
 var routeElektronik=require('./app_server/routes/ElektronikRoute');//Elektronik'in Route'u import edildi.
 
+app.use(ejsLayouts);//Layout Kullanıldı.
 app.use('/public',express.static(path.join(__dirname,'public')));//Public klasörü genel'e açıldı.Erişim sağlanır.
 
 
