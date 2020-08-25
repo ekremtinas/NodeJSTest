@@ -3,6 +3,8 @@ module.exports = {
       name: "NodeTest",
       script: "/app.js",
       watch       : true,
+      instances : "max",
+      exec_mode : "cluster",
       env: {
         NODE_ENV: "development",
       },
