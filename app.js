@@ -1,5 +1,5 @@
 var http=require('http');
-
+/* */
 var fs=require('fs');
 var debug=require('debug');
 var express=require('express');//Express Modülü import edildi.
@@ -27,10 +27,11 @@ next();//Middlewareler arası zinciri bağlar.
 });*/
 /*app.use('/elektronik',routeElektronik)//Elektronik'in route'u express ile kullanıldı.Devamı Elektronik Route'da..
 */
-
+debugger;
 require('./app_server/routes/routeManager')(app);//RouteManager'i kullanarak app.js'i sade bir hale getirdik.app nesnesi referans olarak require edildi ve routemanagerde kurucu fonksiyon çalıştı.
 
 app.listen(9000);//Port dinlendi.
 
 
 
+/* */

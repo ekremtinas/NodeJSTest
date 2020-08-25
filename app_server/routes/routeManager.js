@@ -5,4 +5,5 @@ module.exports=function(app){//Kurucu fonksiyon app.jsdeki require sayesinde ça
     var routeHome=require('./homeRoutes');
     app.use('/login',routeLogin);
     app.use('/',routeHome);
+    
 }
