@@ -11,4 +11,3 @@
         "start": "nodemon --inspect=localhost:9229 app.js"
     }
 }
-
